@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefWidth="200.0">
+         <children>
+            <TextField fx:id="addName" minWidth="-Infinity" prefHeight="27.0" prefWidth="162.0" />
+            <TextField fx:id="addPhone" minWidth="-Infinity" prefHeight="27.0" prefWidth="151.0" />
+            <TextField fx:id="addEmail" minWidth="-Infinity" prefHeight="27.0" prefWidth="148.0" />
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#toAdd" prefHeight="27.0" prefWidth="67.0" text="Add" HBox.hgrow="ALWAYS" />
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#toRemove" prefHeight="27.0" prefWidth="72.0" text="Remove" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <ListView fx:id="list" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
